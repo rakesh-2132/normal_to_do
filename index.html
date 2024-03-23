@@ -1,0 +1,56 @@
+<IDOCTYPE html>
+    <html>
+
+    <head>
+        <meta name="viewport" ” content="width=device-width, initial-scale=1">
+        <title>To-Do List App - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a class="active" onclick="showContent('home')">Home</a>
+            <a href="#" onclick="showContent('container')">TO-DO-LIST</a>
+            <a href="#" onclick="showContent('gallery');getProfile();">Gallery</a>
+
+        </div>
+
+
+        <div id="home" class="content">
+            <h1>Welcome to the Home Page</h1>
+        </div>
+
+
+        <div id="container" class="content">
+            <div class="todoapp">
+                <h2>To-Do List <img
+                        src="images/png-transparent-checkmark-done-exam-list-pencil-todo-xomo-basics-icon-thumbnail.png">
+                </h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your item">
+                    <button onclick="addTask()">Add</button>
+
+                </div>
+                <ul id="list-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+
+                </ul>
+            </div>
+
+        </div>
+        <div id="gallery" class="content">
+            <h1>Api profile viewer</h1>
+            <div class="cardwrapper">
+                <div class="card">
+                    <img src="https://robohash.org/Terry.png?set=set4" alt="img1">
+                    
+                </div>
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+    </html>
